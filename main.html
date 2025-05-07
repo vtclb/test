@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Varta Laser Tag</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Meta & SEO -->
+  <meta name="description" content="Гнучка платформа для ліз та рейтингів Varta Laser Tag">
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+  <!-- Header -->
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold text-blue-600">Varta</a>
+      <nav class="space-x-6">
+        <a href="#leagues" class="hover:text-blue-600">Ліги</a>
+        <a href="#leaderboard" class="hover:text-blue-600">Рейтинг</a>
+        <a href="#features" class="hover:text-blue-600">Функції</a>
+        <a href="#contact" class="hover:text-blue-600">Контакти</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-white">
+    <div class="container mx-auto px-6 py-16 flex flex-col lg:flex-row items-center">
+      <!-- Text -->
+      <div class="lg:w-1/2">
+        <h1 class="text-4xl font-extrabold mb-4">Varta Laser Tag</h1>
+        <p class="mb-6 text-gray-600">Гейміфікована платформа для ліз, рейтингів та турнірів у лазертазі. Створюйте команди, змагайтеся та здобувайте нагороди.</p>
+        <a href="#" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition">Дізнатися більше</a>
+      </div>
+      <!-- Placeholder Image -->
+      <div class="lg:w-1/2 mt-10 lg:mt-0 flex justify-center">
+        <img src="/images/hero-placeholder.svg" alt="Laser Tag Illustration" class="w-3/4 max-w-sm">
+      </div>
+    </div>
+  </section>
+
+  <!-- Leagues Overview -->
+  <section id="leagues" class="container mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold text-center mb-8">Наші ліги</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- League Card Template -->
+      <div class="bg-white rounded-2xl shadow p-6 text-center">
+        <h3 class="text-xl font-semibold mb-2">Дитяча ліга</h3>
+        <p class="text-gray-600 mb-4">Змагання для юних героїв</p>
+        <a href="#" class="text-blue-600 hover:underline">Переглянути</a>
+      </div>
+      <div class="bg-white rounded-2xl shadow p-6 text-center">
+        <h3 class="text-xl font-semibold mb-2">Доросла ліга</h3>
+        <p class="text-gray-600 mb-4">Серйозні бої для досвідчених</p>
+        <a href="#" class="text-blue-600 hover:underline">Переглянути</a>
+      </div>
+      <div class="bg-white rounded-2xl shadow p-6 text-center">
+        <h3 class="text-xl font-semibold mb-2">Нова ліга</h3>
+        <p class="text-gray-600 mb-4">Створіть власну</p>
+        <a href="#" class="text-blue-600 hover:underline">Створити</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="bg-gray-100 py-16">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-8">Основні можливості</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="flex items-start">
+          <div class="p-4 bg-white rounded-full shadow mr-4">
+            <!-- Icon Placeholder -->
+            <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 24 24"><path d="..."/></svg>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-2">Гейміфікація</h4>
+            <p class="text-gray-600">Завдання, челенджі, бейджі та нагороди.</p>
+          </div>
+        </div>
+        <div class="flex items-start">
+          <div class="p-4 bg-white rounded-full shadow mr-4">
+            <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 24 24"><path d="..."/></svg>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-2">Командні змагання</h4>
+            <p class="text-gray-600">Створення команд та рейтинги.</p>
+          </div>
+        </div>
+        <div class="flex items-start">
+          <div class="p-4 bg-white rounded-full shadow mr-4">
+            <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 24 24"><path d="..."/></svg>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-2">Лідерборди</h4>
+            <p class="text-gray-600">Перегляд топ-гравців та топ-команд.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leaderboard Preview -->
+  <section id="leaderboard" class="container mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold text-center mb-8">Топ-5 гравців</h2>
+    <div class="overflow-x-auto">
+      <table class="w-full bg-white rounded-lg shadow">
+        <thead class="bg-gray-200">
+          <tr>
+            <th class="py-3 px-6 text-left">#</th>
+            <th class="py-3 px-6 text-left">Нікнейм</th>
+            <th class="py-3 px-6 text-left">Ранг</th>
+            <th class="py-3 px-6 text-left">Команда</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Data rows placeholder -->
+          <tr class="border-b">
+            <td class="py-3 px-6">1</td>
+            <td class="py-3 px-6">PlayerOne</td>
+            <td class="py-3 px-6">A+</td>
+            <td class="py-3 px-6">Varta Team</td>
+          </tr>
+          <!-- Repeat rows -->
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-white py-8">
+    <div class="container mx-auto px-6 text-center text-gray-600">
+      <p>&copy; 2025 Varta Laser Tag. Усі права захищені.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
